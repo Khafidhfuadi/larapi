@@ -8,6 +8,11 @@ use App\Http\Resources\User\MateriCollection;
 
 class MateriController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:api');
+    }
+
     public function show($id)
     {
         $materi = materi::where('user_id', $id)->get();
