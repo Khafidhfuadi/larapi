@@ -18,7 +18,7 @@ class MateriCollection extends ResourceCollection
             'data' => [
                 'name' => $this->collection->first()->user->name,
                 'email' => $this->collection->first()->user->email,
-            ],
+            ],  
             'materi' => MateriResource::collection($this->collection),
             'jumlah materi' => $this->collection->count()
         ];

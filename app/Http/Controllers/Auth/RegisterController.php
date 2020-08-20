@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
+    
     /*
     |--------------------------------------------------------------------------
     | Register Controller
